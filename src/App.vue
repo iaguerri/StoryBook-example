@@ -1,18 +1,17 @@
 <template>
   <div>
-    <setFilter @updateFilter="updateFilter" />
-    <CalculateFilter :filterString="filter" />
+    <SetFilter @updateFilter="updateFilter" />
+    <CalculatedFilter :filterString="filter" />
   </div>
 </template>
 
 <script>
-import CalculateFilter from "./components/filter/CalculateFilter.vue";
-import setFilter from "./components/filter/setFilter.vue";
-
+import CalculatedFilter from "./components/filter/calculatedFilter.vue";
+import SetFilter from "./components/filter/setFilter.vue";
 export default {
   components: {
-    CalculateFilter,
-    setFilter,
+    CalculatedFilter,
+    SetFilter,
   },
   data() {
     return {
@@ -26,7 +25,6 @@ export default {
   },
 };
 </script>
-
 
 <style>
 </style>
